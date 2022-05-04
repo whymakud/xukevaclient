@@ -1,0 +1,108 @@
+/*******************
+    Main definitions
+*******************/
+body, div, a, h1, h2, h3, h4, h5, li, ul{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	color: #fdfdfd;
+	cursor: default;
+}
+ul{
+	margin: 0 30px;
+}
+li{
+	list-style: none;
+}
+a{
+	color: #43BBFE;
+	text-decoration: none;
+}
+a:hover{
+	color: #168AB8;
+}
+h1{
+	font-size: 35px;
+}
+h3{
+	padding-top: 10px;
+	font-size: 30px;
+}
+
+.wrap {
+	z-index: 10;
+	width: 1060px;
+	height: 520px;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+.logo{
+	margin-top: 40px;
+	text-align: center;
+	float: left;
+}
+.logo img{
+	width: 400px;
+}
+
+.text{
+	width: 600px;
+	margin: 62px auto 0 40px;
+	font-size: 24px;
+	padding-bottom: 60px;
+	float: left;
+}
+.text p{
+	margin: 16px 0 0;
+}
+
+#particles {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #3C3C3C;
+	position: fixed;
+	top: 0;
+	z-index: 1;
+}
+.muted {
+	color: grey;
+}
+
+/*******************
+    Help classes
+*******************/
+.clearfix{
+    *zoom: 1;
+}
+.clearfix:after{
+    clear: both;
+}
+.clearfix:after, .clearfix:before{
+    content: " ";
+    display: table;
+}
+
+@media screen and (max-height: 520px){
+	.wrap {
+		position: relative;
+	}
+}
+@media screen and (max-width: 1060px){
+	.logo {
+		float: none;
+	}
+	.wrap {
+		position: relative;
+		width: auto;
+		height: auto;
+	}
+}

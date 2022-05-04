@@ -1,1 +1,44 @@
-<h1>Hello, Xukeva Watching you.</h1>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<meta name="description" content="XukevaClient Website">
+    <title>XukevaClient Website</title>
+	<link rel="icon" href="https://raw.githubusercontent.com/whymakud/whymakud.github.io/main/icon.png">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+	<link href='//fonts.googleapis.com/css?family=Open+Sans&subset=latin,cyrillic-ext' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="wrap clearfix">
+		<div class="logo"><img src="https://raw.githubusercontent.com/whymakud/whymakud.github.io/main/icon.png"></div>
+		<div class="text">
+			<h1>XukevaClient Website</h1>
+			<p>Хороший функционал <span class="muted">//</span> Это пока-что бесплатно <span class="muted">//</span> Есть русский язык</p>
+			<br>
+			<h3>Последний релиз</h3>
+			<ul>
+				<li><a href="http://vimeworld.ru">XukevaClient Mod 1.12.2 | latest-release</a></li>
+			</ul>
+			<br>
+			<h3>Контакты</h3>
+			<ul>
+				<li>Телеграм: @whymakud</li>
+			</ul>
+		</div>
+	</div>
+	
+	<div id="particles"></div>
+	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="assets/js/jquery.particleground.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		if (!navigator.userAgent.match(/(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i)) {
+			$('#particles').particleground({
+				dotColor: '#777',
+				lineColor: '#777'
+			});
+		}
+	});
+	</script>
+</body>
+</html>
